@@ -5,6 +5,16 @@ const FALLBACK = {
   "car_line": "쏘나타 YF 2010 · LPG(LPI) 2.0 세타II · 단거리 왕복 15km 출퇴근 위주(노후차)",
   "inquiries": [{
     "id": "engine_oil",
+    "simple": {
+      "title": "📋 한눈에 정리 — 이것만 알면 돼요",
+      "lines": [
+        "🚗 내 차: 쏘나타 YF 2010 · LPG · 단거리 왕복 15km 출퇴근(오래된 차).",
+        "🛢 뭘 넣나: 5W-30 합성유 4L 한 통. (순정은 5W-20이지만 오래됐고 단거리라 조금 더 든든한 5W-30이 안전. 5W-40까진 필요 없어요.)",
+        "🧰 같이 살 것: 엔진오일필터 1개 + 드레인와셔 1개. 공임나라는 부품만 가져가면 공임(작업비)만 받아요.",
+        "💰 돈: 부품 3종 약 2만2천~2만4천원 + 공임 약 1만9천원 = 다 합쳐 4만원 초반. (쿠팡보다 옥션·11번가가 쌀 때가 많아요.)",
+        "⏰ 언제: 단거리라 오일이 빨리 늙어요 → 5,000km 또는 6개월 중 먼저 오는 때 교환. 오일필터도 같이."
+      ]
+    },
     "question": "10년식 YF 가스차(LPG)인데 엔진오일 갈아야 해요. 오래된 차에 단거리 왕복 15km 출퇴근만 하는데 점도 얼마짜리 써야 하고, 공임나라 가져갈 때 오일 말고 세트로 2개 더 뭘 사가야 하나요? 그리고 어디서 사는 게 제일 싸요?",
     "tldr": "5W-30 합성유 4L(1통) + 엔진오일필터 1개 + 드레인와셔 1개, 이 3개만 사서 공임나라 가면 됩니다. 온라인 3종 합쳐 약 2만2천~2만4천원, 공임 약 1만9천원 → 총 4만원 초반. 단거리라 오일이 빨리 늙으니 '5,000km 또는 6개월' 중 먼저 오는 때 갈아주세요.",
     "viscosity": {
@@ -73,14 +83,14 @@ const FALLBACK = {
       "폐오일통·영수증은 정비 기록용 보관. 며칠간 오일 색·양 이상 없나 확인."
     ],
     "coupang_cart": {
-      "intro": "아래 버튼을 누르면 쿠팡에서 그 제품 검색결과가 바로 떠요. 마음에 드는 걸 골라 '장바구니 담기'만 누르면 끝. 담을지 말지는 직접 고르면 됩니다.",
+      "intro": "누르면 쿠팡 상품(또는 검색결과) 페이지가 떠요. '장바구니 담기'만 누르면 끝, 담을지 말지는 직접 고르면 됩니다. 혹시 상품 페이지가 안 열리면 바로 아래 '검색어'로 찾으세요.",
       "items": [
-        {"label": "① 엔진오일 5W-30 4L (지크 X7 추천)", "q": "지크 X7 5W30 4L", "tip": "LPG차도 이거 그대로 OK. 가성비 1순위"},
-        {"label": "② 엔진오일필터 (순정 26300-35505)", "q": "현대 순정 오일필터 26300-35505", "tip": "YF 2.0 세타2용. 사제 호환도 가능"},
-        {"label": "③ 드레인와셔 (순정 21513-23001)", "q": "드레인와셔 21513-23001", "tip": "세트에 잘 빠지니 꼭 따로 챙기기"},
-        {"label": "💡 한 번에: 오일+필터 교환세트", "q": "YF 쏘나타 2.0 LPG 엔진오일 교환세트", "tip": "오일4L+필터 묶음. 드레인와셔만 따로 추가하면 3종 완성"}
+        {"label": "① 엔진오일 5W-30 4L (지크 X7)", "q": "지크 X7 5W30 4L", "desc": "엔진 속을 매끄럽게 하는 기름. YF 2.0은 4L 한 통이면 딱. LPG차도 이 가솔린용 5W-30 그대로 써요. 지크 X7이 가성비 좋아요.", "url": "https://www.coupang.com/vp/products/7166587223"},
+        {"label": "② 엔진오일필터 (순정 26300-35505)", "q": "현대 순정 오일필터 26300-35505", "desc": "기름 속 찌꺼기를 걸러주는 원통 필터. 오일 갈 때 무조건 같이 교체. 순정 26300-35505 또는 사제 호환이면 OK.", "url": "https://www.coupang.com/vp/products/6738719384"},
+        {"label": "③ 드레인와셔 (순정 21513-23001)", "q": "드레인와셔 21513-23001", "desc": "오일 빼는 볼트에 들어가는 얇은 금속 링. 재사용하면 기름이 샐 수 있어 새것으로. 세트에 잘 빠져서 이것만 따로 챙겨야 해요. (직링크가 없어 검색으로 열려요.)"},
+        {"label": "💡 한 번에: 오일+필터 교환세트", "q": "YF 쏘나타 2.0 LPG 엔진오일 교환세트", "desc": "오일 4L + 오일필터가 묶인 세트라 한 번에 사기 편해요. 드레인와셔만 따로 추가하면 3종 완성. (세트 오일 등급은 상품마다 달라요.)", "url": "https://www.coupang.com/vp/products/8326875040"}
       ],
-      "note": "이 링크들은 수수료(쿠팡 파트너스) 링크가 아니라 그냥 쿠팡 검색으로 이동만 하는 순수 링크예요. 클릭해도 수수료 안 붙고, 제품 골라 담는 건 전적으로 직접 선택."
+      "note": "이 링크들은 수수료(쿠팡 파트너스) 링크가 아니라 그냥 쿠팡으로 이동만 하는 순수 링크예요. 상품ID 링크는 검색 기반이라 재고·페이지가 바뀌면 안 열릴 수 있는데, 그땐 위 '검색어'로 찾으면 됩니다."
     },
     "sources": [
       {"note": "CarStation — YF 세타II 2.0 추천오일·주입량", "url": "http://www.carstation.co.kr/data/021.html"},
@@ -126,134 +136,41 @@ function render(data) {
   const app = document.getElementById("app");
   app.innerHTML = "";
 
-  // 질문
-  const qb = el("div", "qbox");
-  qb.appendChild(el("div", "lab", "🙋 내 질문"));
-  qb.appendChild(el("div", "q", esc(inq.question)));
-  app.appendChild(qb);
-
-  // 한 줄 결론
-  if (inq.tldr) {
-    const t = el("div", "tldr");
-    t.appendChild(el("div", "lab", "✅ 딱 한 줄 결론"));
-    t.appendChild(el("div", "body", esc(inq.tldr)));
-    app.appendChild(t);
-  }
-
   // 툴바 (전체 접기/펼치기)
   const tb = el("div", "toolbar");
   tb.appendChild(el("div", "hint", "👇 제목을 누르면 접혔다 펴져요"));
-  const btn = el("div", "btn-all", "⊞ 전체 펼치기");
+  const btn = el("div", "btn-all", "⊟ 전체 접기");
   tb.appendChild(btn);
   app.appendChild(tb);
 
-  // ① 점도
-  const v = inq.viscosity || {};
-  app.appendChild(makeSection("①  엔진오일 점도 — 뭘 쓰지?", body => {
-    const r = el("div", "reco");
-    r.appendChild(el("div", "big", "👉 추천: " + esc(v.recommend)));
-    kv(r, "🏭 제조사 권장:", v.manufacturer, "mut");
-    body.appendChild(r);
-    (v.why || []).forEach(w => body.appendChild(el("div", "bullet", esc(w))));
-    kv(body, "🚗 단거리 15km 포인트:", v.short_trip);
-    kv(body, "🔄 교환주기:", v.cycle);
-    kv(body, "🛢 오일 종류·가격대:", v.oil_type_price, "mut");
-  }, false));
+  // ① 한눈에 정리 (아주 간단한 설명)
+  const sp = inq.simple || {};
+  if (sp.lines && sp.lines.length) {
+    app.appendChild(makeSection(sp.title || "📋 한눈에 정리", body => {
+      sp.lines.forEach(ln => body.appendChild(el("div", "bullet", esc(ln))));
+    }, true));
+  }
 
-  // ② 준비물 3종
-  const s = inq.shopping_set || {};
-  app.appendChild(makeSection("②  공임나라 준비물 — 딱 3개", body => {
-    if (s.intro) body.appendChild(el("div", "mut", esc(s.intro)));
-    (s.items || []).forEach(it => {
-      const c = el("div", "item");
-      const h = el("div", "h");
-      h.appendChild(el("span", "n", String(it.n)));
-      h.appendChild(el("span", "nm", esc(it.name)));
-      c.appendChild(h);
-      if (it.qty) c.appendChild(el("div", "row", '<span class="p">📦 수량:</span> ' + esc(it.qty)));
-      if (it.desc) c.appendChild(el("div", "row", esc(it.desc)));
-      if (it.spec) c.appendChild(el("div", "spec", "🔩 " + esc(it.spec)));
-      if (it.note) c.appendChild(el("div", "row", '<span class="p">💡</span> ' + esc(it.note)));
-      body.appendChild(c);
-    });
-    if (s.labor) body.appendChild(el("div", "kv", '<span class="p">🔧 공임나라 작업비:</span> ' + esc(s.labor)));
-    (s.mistakes || []).forEach(m => {
-      const b = el("div", "bullet warn"); b.innerHTML = esc(m); body.appendChild(b);
-    });
-  }, false));
-
-  // ③ 가격 = 쿠팡 검색 레시피
-  const p = inq.price_compare || {};
-  app.appendChild(makeSection("③  어디가 제일 싸? (쿠팡 검색)", body => {
-    if (p.intro) body.appendChild(el("div", "mut", esc(p.intro)));
-    const grp = (label, rows) => {
-      if (!rows || !rows.length) return;
-      const g = el("div", "pgroup");
-      g.appendChild(el("div", "gl", "▸ " + esc(label)));
-      rows.forEach(r => {
-        const pr = el("div", "prod");
-        pr.appendChild(el("div", "nm", "• " + esc(r.nm)));
-        pr.appendChild(el("div", "recipe", "🔎 쿠팡 &gt; 「" + esc(r.search) + "」 검색 → 가격 " + esc(r.ok) + " 이면 맞음"));
-        if (r.note) pr.appendChild(el("div", "note", esc(r.note)));
-        g.appendChild(pr);
-      });
-      body.appendChild(g);
-    };
-    grp("엔진오일", p.oil);
-    grp("엔진오일필터", p.filter);
-    grp("드레인와셔", p.washer);
-    if (p.best_value) { const b = el("div", "reco"); b.appendChild(el("div", "big", "🏆 가성비 결론")); b.appendChild(el("div", "kv", esc(p.best_value))); body.appendChild(b); }
-    kv(body, "🧮 3종+공임 합계:", p.total);
-    if (p.honesty) body.appendChild(el("div", "honesty", "ℹ️ " + esc(p.honesty)));
-  }, false));
-
-  // ④ 정비 학습
-  const m = inq.maintenance_learn || {};
-  app.appendChild(makeSection("④  정비 학습 — 쉽게 이해하기", body => {
-    if (m.intro) body.appendChild(el("div", "mut", esc(m.intro)));
-    (m.points || []).forEach(qa => {
-      const c = el("div", "qa");
-      c.appendChild(el("div", "qq", "❓ " + esc(qa.q)));
-      c.appendChild(el("div", "aa", "→ " + esc(qa.a)));
-      body.appendChild(c);
-    });
-  }, false));
-
-  // ⑤ 순서
-  app.appendChild(makeSection("⑤  이 순서대로 하면 끝", body => {
-    (inq.steps || []).forEach((x, i) => {
-      const st = el("div", "step");
-      st.appendChild(el("div", "num", String(i + 1)));
-      st.appendChild(el("div", null, esc(x)));
-      body.appendChild(st);
-    });
-  }, false));
-
-  // ⑥ 쿠팡 장바구니 담기 (순수 검색링크)
+  // ② 쿠팡 바로 담기
   const cc = inq.coupang_cart || {};
   if (cc.items && cc.items.length) {
-    app.appendChild(makeSection("⑥  🛒 쿠팡 장바구니 담기", body => {
+    app.appendChild(makeSection("🛒 쿠팡 바로 담기", body => {
       if (cc.intro) body.appendChild(el("div", "mut", esc(cc.intro)));
-      (cc.items || []).forEach(it => {
-        const url = "https://www.coupang.com/np/search?q=" + encodeURIComponent(it.q);
+      cc.items.forEach(it => {
+        const url = it.url || ("https://www.coupang.com/np/search?q=" + encodeURIComponent(it.q));
+        const wrap = el("div", "cart-item");
+        wrap.appendChild(el("div", "ci-name", esc(it.label)));
+        if (it.desc) wrap.appendChild(el("div", "ci-desc", esc(it.desc)));
+        wrap.appendChild(el("div", "ci-q", "🔎 검색어:  " + esc(it.q)));
         const a = el("a", "cart-btn");
         a.href = url; a.target = "_blank"; a.rel = "noopener";
-        a.innerHTML = '<span class="cb-t">🛒 ' + esc(it.label) + '</span><span class="cb-go">쿠팡 열기 ▸</span>';
-        body.appendChild(a);
-        if (it.tip) body.appendChild(el("div", "cart-tip", "· " + esc(it.tip)));
+        a.innerHTML = '<span class="cb-t">' + (it.url ? "🛒 쿠팡에서 상품 열기" : "🛒 쿠팡에서 검색해 열기") + '</span><span class="cb-go">열기 ▸</span>';
+        wrap.appendChild(a);
+        body.appendChild(wrap);
       });
       if (cc.note) body.appendChild(el("div", "honesty", "🔒 " + esc(cc.note)));
     }, true));
   }
-
-  // 📚 출처
-  app.appendChild(makeSection("📚  출처", body => {
-    (inq.sources || []).forEach(sc => {
-      const d = el("div", "src");
-      d.innerHTML = "🔗 " + (sc.url ? '<a href="' + esc(sc.url) + '" target="_blank" rel="noopener">' + esc(sc.note || sc.url) + "</a>" : esc(sc.note));
-      body.appendChild(d);
-    });
-  }, false));
 
   // 전체 접기/펼치기 동작
   btn.addEventListener("click", () => {
