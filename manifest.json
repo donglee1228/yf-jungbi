@@ -1,0 +1,22 @@
+{
+  "name": "YF 나의 전용 문의 — 엔진오일 교환",
+  "short_name": "YF 정비문의",
+  "description": "쏘나타 YF 2010 LPG 단거리 출퇴근차 전용 엔진오일 교환 가이드. 점도·공임나라 준비물 3종·가격비교·정비학습을 핸드폰에서 한눈에.",
+  "lang": "ko",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./",
+  "background_color": "#14161b",
+  "theme_color": "#1c1f26",
+  "categories": ["utilities", "lifestyle"],
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
