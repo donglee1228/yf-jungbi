@@ -72,6 +72,16 @@ const FALLBACK = {
       "교환 후 계기판 오일 알림 리셋 요청, 다음 시점 메모(현재 주행거리 +5,000km 또는 6개월 뒤).",
       "폐오일통·영수증은 정비 기록용 보관. 며칠간 오일 색·양 이상 없나 확인."
     ],
+    "coupang_cart": {
+      "intro": "아래 버튼을 누르면 쿠팡에서 그 제품 검색결과가 바로 떠요. 마음에 드는 걸 골라 '장바구니 담기'만 누르면 끝. 담을지 말지는 직접 고르면 됩니다.",
+      "items": [
+        {"label": "① 엔진오일 5W-30 4L (지크 X7 추천)", "q": "지크 X7 5W30 4L", "tip": "LPG차도 이거 그대로 OK. 가성비 1순위"},
+        {"label": "② 엔진오일필터 (순정 26300-35505)", "q": "현대 순정 오일필터 26300-35505", "tip": "YF 2.0 세타2용. 사제 호환도 가능"},
+        {"label": "③ 드레인와셔 (순정 21513-23001)", "q": "드레인와셔 21513-23001", "tip": "세트에 잘 빠지니 꼭 따로 챙기기"},
+        {"label": "💡 한 번에: 오일+필터 교환세트", "q": "YF 쏘나타 2.0 LPG 엔진오일 교환세트", "tip": "오일4L+필터 묶음. 드레인와셔만 따로 추가하면 3종 완성"}
+      ],
+      "note": "이 링크들은 수수료(쿠팡 파트너스) 링크가 아니라 그냥 쿠팡 검색으로 이동만 하는 순수 링크예요. 클릭해도 수수료 안 붙고, 제품 골라 담는 건 전적으로 직접 선택."
+    },
     "sources": [
       {"note": "CarStation — YF 세타II 2.0 추천오일·주입량", "url": "http://www.carstation.co.kr/data/021.html"},
       {"note": "다나와 차량별 주입량표 — YF LPI 5W-20/5W-30, 4L", "url": "https://img.danawa.com/new/goods_list/v1/popup_oil.html"},
@@ -218,6 +228,23 @@ function render(data) {
       body.appendChild(st);
     });
   }, false));
+
+  // ⑥ 쿠팡 장바구니 담기 (순수 검색링크)
+  const cc = inq.coupang_cart || {};
+  if (cc.items && cc.items.length) {
+    app.appendChild(makeSection("⑥  🛒 쿠팡 장바구니 담기", body => {
+      if (cc.intro) body.appendChild(el("div", "mut", esc(cc.intro)));
+      (cc.items || []).forEach(it => {
+        const url = "https://www.coupang.com/np/search?q=" + encodeURIComponent(it.q);
+        const a = el("a", "cart-btn");
+        a.href = url; a.target = "_blank"; a.rel = "noopener";
+        a.innerHTML = '<span class="cb-t">🛒 ' + esc(it.label) + '</span><span class="cb-go">쿠팡 열기 ▸</span>';
+        body.appendChild(a);
+        if (it.tip) body.appendChild(el("div", "cart-tip", "· " + esc(it.tip)));
+      });
+      if (cc.note) body.appendChild(el("div", "honesty", "🔒 " + esc(cc.note)));
+    }, true));
+  }
 
   // 📚 출처
   app.appendChild(makeSection("📚  출처", body => {

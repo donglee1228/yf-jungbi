@@ -117,6 +117,17 @@ body{
   border-radius:8px; min-width:26px; height:26px; display:flex; align-items:center;
   justify-content:center; font-weight:800; font-size:13px; flex:none}
 
+/* 쿠팡 장바구니 버튼 */
+.cart-btn{display:flex; align-items:center; justify-content:space-between; gap:8px;
+  text-decoration:none; background:linear-gradient(180deg,#2a2f3a,#222630);
+  border:1.5px solid var(--gold); border-radius:12px; padding:13px 14px; margin:8px 0 2px;
+  box-shadow:var(--shadow)}
+.cart-btn:active{background:#20242c}
+.cart-btn .cb-t{color:var(--gold); font-weight:800; font-size:14.5px; flex:1}
+.cart-btn .cb-go{color:#151515; background:var(--gold); font-weight:800; font-size:12.5px;
+  border-radius:999px; padding:5px 11px; white-space:nowrap}
+.cart-tip{color:var(--dim); font-size:12.5px; margin:0 0 8px 4px}
+
 /* 출처 */
 .src{margin:5px 0; font-size:12.5px}
 .src a{color:var(--link); text-decoration:none}
